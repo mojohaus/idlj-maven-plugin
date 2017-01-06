@@ -7,10 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Jesse McConnell jesse.mcconnell@gmail.com" />
     <meta name="Date-Revision-yyyymmdd" content="20170106" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>CORBA IDL Compiler Maven Plugin &#x2013; Introduction</title>
+    <title>CORBA IDL Compiler Maven Plugin &#x2013; idlj:help</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.5.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -64,7 +63,7 @@
         CORBA IDL Compiler Maven Plugin</a>
                     <span class="divider">/</span>
       </li>
-        <li class="active ">Introduction</li>
+        <li class="active ">idlj:help</li>
         
               
                   <li id="publishDate" class="pull-right"><span class="divider">|</span> Last Published: 2017-01-06</li>
@@ -90,10 +89,12 @@
                 <ul class="nav nav-list">
                     <li class="nav-header">Overview</li>
                               
-      <li class="active">
+      <li>
   
-            <a href="#"><span class="none"></span>Introduction</a>
-          </li>
+                          <a href="index.html" title="Introduction">
+          <span class="none"></span>
+        Introduction</a>
+            </li>
                 
       <li>
   
@@ -109,104 +110,13 @@
         Usage</a>
             </li>
                               <li class="nav-header">Project Documentation</li>
-                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                        
       <li>
   
                           <a href="project-info.html" title="Project Information">
-          <span class="icon-chevron-down"></span>
+          <span class="icon-chevron-right"></span>
         Project Information</a>
-                    <ul class="nav nav-list">
-                    
-      <li>
-  
-                          <a href="integration.html" title="CI Management">
-          <span class="none"></span>
-        CI Management</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependencies.html" title="Dependencies">
-          <span class="none"></span>
-        Dependencies</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependency-convergence.html" title="Dependency Convergence">
-          <span class="none"></span>
-        Dependency Convergence</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependency-info.html" title="Dependency Information">
-          <span class="none"></span>
-        Dependency Information</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependency-management.html" title="Dependency Management">
-          <span class="none"></span>
-        Dependency Management</a>
-            </li>
-                    
-      <li class="active">
-  
-            <a href="#"><span class="none"></span>About</a>
-          </li>
-                    
-      <li>
-  
-                          <a href="issue-tracking.html" title="Issue Management">
-          <span class="none"></span>
-        Issue Management</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="license.html" title="Licenses">
-          <span class="none"></span>
-        Licenses</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="mail-lists.html" title="Mailing Lists">
-          <span class="none"></span>
-        Mailing Lists</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="plugin-management.html" title="Plugin Management">
-          <span class="none"></span>
-        Plugin Management</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="team-list.html" title="Team">
-          <span class="none"></span>
-        Team</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="source-repository.html" title="Source Code Management">
-          <span class="none"></span>
-        Source Code Management</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="project-summary.html" title="Summary">
-          <span class="none"></span>
-        Summary</a>
-            </li>
-              </ul>
-        </li>
+                  </li>
                                                                                                                                                                                                                                     
       <li>
   
@@ -240,20 +150,155 @@
                 
         <div id="bodyColumn"  class="span10" >
                                   
-            <div class="section">
-<h2><a name="CORBA_IDL_Compiler_Maven_Plugin"></a>CORBA IDL Compiler Maven Plugin</h2>
-<p>The CORBA IDL Compiler Maven Plugin is used for processing IDL files into java sources.</p>
-<div class="section">
-<h3><a name="Goals_Overview"></a>Goals Overview</h3>
-<p>The CORBA IDL Compiler Maven Plugin has two goals:</p>
+            
+  
+    <div class="section">
+<h2><a name="idlj:help"></a>idlj:help</h2>
+      
+<p><b>Full name</b>:</p>
+      
+<p>org.codehaus.mojo:idlj-maven-plugin:1.2.2:help</p>
+      
+<p><b>Description</b>:</p>
+      
+<div>Display help information on idlj-maven-plugin.<br />
+Call <tt>mvn idlj:help -Ddetail=true
+-Dgoal=&lt;goal-name&gt;</tt> to display parameter details.</div>
+      
+<p><b>Attributes</b>:</p>
+      
 <ul>
-<li><a href="./generate-mojo.html"> idlj:generate</a> Process CORBA IDL files in IDLJ.</li>
-<li><a href="./generate-test-mojo.html"> idlj:generate-test</a> Process CORBA IDL test files in IDLJ.</li></ul></div>
+        
+<li>The goal is thread-safe and supports parallel builds.</li>
+      </ul>
+      
 <div class="section">
-<h3><a name="Usage"></a>Usage</h3>
-<p>General instructions on how to use the CORBA IDL Compiler Maven Plugin can be found on the <a href="./usage.html">usage page</a>.</p>
-<p>In case you still have questions regarding the plugin's usage, please feel free to contact the <a href="./mail-lists.html">user mailing list</a>. The posts to the mailing list are archived and could already contain the answer to your question as part of an older thread. Hence, it is also worth browsing/searching the <a href="./mail-lists.html">mail archive</a>.</p>
-<p>If you feel like the plugin is missing a feature or has a defect, you can fill a feature request or bug report in our <a href="./issue-tracking.html">issue tracker</a>. When creating a new issue, please provide a comprehensive description of your concern. Especially for fixing bugs it is crucial that the developers can reproduce your problem. For this reason, entire debug logs, POMs or most preferably little demo projects attached to the issue are very much appreciated. Of course, patches are most welcome too. Contributors can check out the project from our <a href="./source-repository.html">source repository</a> and will find supplementary information in the <a class="externalLink" href="http://maven.apache.org/guides/development/guide-helping.html">guide to helping with Maven</a>.</p></div></div>
+<h3><a name="Optional_Parameters"></a>Optional Parameters</h3>
+        
+<table class="table table-striped" border="0">
+          
+<tr class="a">
+            
+<th>Name</th>
+            
+<th>Type</th>
+            
+<th>Since</th>
+            
+<th>Description</th>
+          </tr>
+          
+<tr class="b">
+            
+<td><b><a href="#detail">detail</a></b></td>
+            
+<td><tt>boolean</tt></td>
+            
+<td><tt>-</tt></td>
+            
+<td>If <tt>true</tt>, display all settable properties for each
+goal.<br /><b>Default value is</b>: <tt>false</tt>.<br /><b>User property is</b>: <tt>detail</tt>.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><b><a href="#goal">goal</a></b></td>
+            
+<td><tt>String</tt></td>
+            
+<td><tt>-</tt></td>
+            
+<td>The name of the goal for which to show help. If unspecified, all
+goals will be displayed.<br /><b>User property is</b>: <tt>goal</tt>.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><b><a href="#indentSize">indentSize</a></b></td>
+            
+<td><tt>int</tt></td>
+            
+<td><tt>-</tt></td>
+            
+<td>The number of spaces per indentation level, should be positive.<br /><b>Default value is</b>: <tt>2</tt>.<br /><b>User property is</b>: <tt>indentSize</tt>.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><b><a href="#lineLength">lineLength</a></b></td>
+            
+<td><tt>int</tt></td>
+            
+<td><tt>-</tt></td>
+            
+<td>The maximum length of a display line, should be positive.<br /><b>Default value is</b>: <tt>80</tt>.<br /><b>User property is</b>: <tt>lineLength</tt>.</td>
+          </tr>
+        </table>
+      </div>
+      
+<div class="section">
+<h3><a name="Parameter_Details"></a>Parameter Details</h3>
+        
+<p><b><a name="detail">detail</a>:</b></p>
+        
+<div>If <tt>true</tt>, display all settable properties for each
+goal.</div>
+        
+<ul>
+          
+<li><b>Type</b>: <tt>boolean</tt></li>
+          
+<li><b>Required</b>: <tt>No</tt></li>
+          
+<li><b>User Property</b>: <tt>detail</tt></li>
+          
+<li><b>Default</b>: <tt>false</tt></li>
+        </ul><hr />
+<p><b><a name="goal">goal</a>:</b></p>
+        
+<div>The name of the goal for which to show help. If unspecified, all
+goals will be displayed.</div>
+        
+<ul>
+          
+<li><b>Type</b>: <tt>java.lang.String</tt></li>
+          
+<li><b>Required</b>: <tt>No</tt></li>
+          
+<li><b>User Property</b>: <tt>goal</tt></li>
+        </ul><hr />
+<p><b><a name="indentSize">indentSize</a>:</b></p>
+        
+<div>The number of spaces per indentation level, should be positive.</div>
+        
+<ul>
+          
+<li><b>Type</b>: <tt>int</tt></li>
+          
+<li><b>Required</b>: <tt>No</tt></li>
+          
+<li><b>User Property</b>: <tt>indentSize</tt></li>
+          
+<li><b>Default</b>: <tt>2</tt></li>
+        </ul><hr />
+<p><b><a name="lineLength">lineLength</a>:</b></p>
+        
+<div>The maximum length of a display line, should be positive.</div>
+        
+<ul>
+          
+<li><b>Type</b>: <tt>int</tt></li>
+          
+<li><b>Required</b>: <tt>No</tt></li>
+          
+<li><b>User Property</b>: <tt>lineLength</tt></li>
+          
+<li><b>Default</b>: <tt>80</tt></li>
+        </ul>
+      </div>
+    </div>
+  
+
                   </div>
             </div>
           </div>

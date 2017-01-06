@@ -7,10 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Jesse McConnell jesse.mcconnell@gmail.com" />
     <meta name="Date-Revision-yyyymmdd" content="20170106" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>CORBA IDL Compiler Maven Plugin &#x2013; Introduction</title>
+    <title>CORBA IDL Compiler Maven Plugin &#x2013; Plugin Documentation</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.5.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -64,7 +63,7 @@
         CORBA IDL Compiler Maven Plugin</a>
                     <span class="divider">/</span>
       </li>
-        <li class="active ">Introduction</li>
+        <li class="active ">Plugin Documentation</li>
         
               
                   <li id="publishDate" class="pull-right"><span class="divider">|</span> Last Published: 2017-01-06</li>
@@ -90,17 +89,17 @@
                 <ul class="nav nav-list">
                     <li class="nav-header">Overview</li>
                               
-      <li class="active">
-  
-            <a href="#"><span class="none"></span>Introduction</a>
-          </li>
-                
       <li>
   
-                          <a href="plugin-info.html" title="Goals">
+                          <a href="index.html" title="Introduction">
           <span class="none"></span>
-        Goals</a>
+        Introduction</a>
             </li>
+                
+      <li class="active">
+  
+            <a href="#"><span class="none"></span>Goals</a>
+          </li>
                 
       <li>
   
@@ -109,111 +108,90 @@
         Usage</a>
             </li>
                               <li class="nav-header">Project Documentation</li>
-                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                        
       <li>
   
                           <a href="project-info.html" title="Project Information">
-          <span class="icon-chevron-down"></span>
+          <span class="icon-chevron-right"></span>
         Project Information</a>
+                  </li>
+                                                                                                                                                                                                                                              
+      <li>
+  
+                          <a href="project-reports.html" title="Project Reports">
+          <span class="icon-chevron-down"></span>
+        Project Reports</a>
                     <ul class="nav nav-list">
-                    
-      <li>
-  
-                          <a href="integration.html" title="CI Management">
-          <span class="none"></span>
-        CI Management</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependencies.html" title="Dependencies">
-          <span class="none"></span>
-        Dependencies</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependency-convergence.html" title="Dependency Convergence">
-          <span class="none"></span>
-        Dependency Convergence</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependency-info.html" title="Dependency Information">
-          <span class="none"></span>
-        Dependency Information</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="dependency-management.html" title="Dependency Management">
-          <span class="none"></span>
-        Dependency Management</a>
-            </li>
                     
       <li class="active">
   
-            <a href="#"><span class="none"></span>About</a>
+            <a href="#"><span class="none"></span>Plugin Documentation</a>
           </li>
                     
       <li>
   
-                          <a href="issue-tracking.html" title="Issue Management">
+                          <a href="github-report.html" title="GitHub Report">
           <span class="none"></span>
-        Issue Management</a>
+        GitHub Report</a>
             </li>
                     
       <li>
   
-                          <a href="license.html" title="Licenses">
+                          <a href="checkstyle.html" title="Checkstyle">
           <span class="none"></span>
-        Licenses</a>
+        Checkstyle</a>
             </li>
                     
       <li>
   
-                          <a href="mail-lists.html" title="Mailing Lists">
+                          <a href="apidocs/index.html" title="JavaDocs">
           <span class="none"></span>
-        Mailing Lists</a>
+        JavaDocs</a>
             </li>
                     
       <li>
   
-                          <a href="plugin-management.html" title="Plugin Management">
+                          <a href="testapidocs/index.html" title="Test JavaDocs">
           <span class="none"></span>
-        Plugin Management</a>
+        Test JavaDocs</a>
             </li>
                     
       <li>
   
-                          <a href="team-list.html" title="Team">
+                          <a href="xref/index.html" title="Source Xref">
           <span class="none"></span>
-        Team</a>
+        Source Xref</a>
             </li>
                     
       <li>
   
-                          <a href="source-repository.html" title="Source Code Management">
+                          <a href="xref-test/index.html" title="Test Source Xref">
           <span class="none"></span>
-        Source Code Management</a>
+        Test Source Xref</a>
             </li>
                     
       <li>
   
-                          <a href="project-summary.html" title="Summary">
+                          <a href="surefire-report.html" title="Surefire Report">
           <span class="none"></span>
-        Summary</a>
+        Surefire Report</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="cobertura/index.html" title="Cobertura Test Coverage">
+          <span class="none"></span>
+        Cobertura Test Coverage</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="taglist.html" title="Tag List">
+          <span class="none"></span>
+        Tag List</a>
             </li>
               </ul>
         </li>
-                                                                                                                                                                                                                                    
-      <li>
-  
-                          <a href="project-reports.html" title="Project Reports">
-          <span class="icon-chevron-right"></span>
-        Project Reports</a>
-                  </li>
             </ul>
               
                             <form id="search-form" action="https://www.google.com/search" method="get" >
@@ -241,19 +219,70 @@
         <div id="bodyColumn"  class="span10" >
                                   
             <div class="section">
-<h2><a name="CORBA_IDL_Compiler_Maven_Plugin"></a>CORBA IDL Compiler Maven Plugin</h2>
-<p>The CORBA IDL Compiler Maven Plugin is used for processing IDL files into java sources.</p>
+<h2><a name="Plugin_Documentation"></a>Plugin Documentation</h2><a name="Plugin_Documentation"></a>
+<p>Goals available for this plugin:</p>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Goal</th>
+<th>Description</th></tr>
+<tr class="b">
+<td><a href="generate-mojo.html">idlj:generate</a></td>
+<td>Process CORBA IDL files in IDLJ.</td></tr>
+<tr class="a">
+<td><a href="generate-test-mojo.html">idlj:generate-test</a></td>
+<td>Process CORBA IDL test files in IDLJ.</td></tr>
+<tr class="b">
+<td><a href="help-mojo.html">idlj:help</a></td>
+<td>Display help information on idlj-maven-plugin.<br />
+Call <code>mvn idlj:help -Ddetail=true
+-Dgoal=&lt;goal-name&gt;</code> to display parameter details.</td></tr></table>
 <div class="section">
-<h3><a name="Goals_Overview"></a>Goals Overview</h3>
-<p>The CORBA IDL Compiler Maven Plugin has two goals:</p>
-<ul>
-<li><a href="./generate-mojo.html"> idlj:generate</a> Process CORBA IDL files in IDLJ.</li>
-<li><a href="./generate-test-mojo.html"> idlj:generate-test</a> Process CORBA IDL test files in IDLJ.</li></ul></div>
+<h3><a name="System_Requirements"></a>System Requirements</h3><a name="System_Requirements"></a>
+<p>The following specifies the minimum requirements to run this Maven plugin:</p>
+<table border="0" class="table table-striped">
+<tr class="a">
+<td>Maven</td>
+<td>2.0</td></tr>
+<tr class="b">
+<td>JDK</td>
+<td>1.7</td></tr>
+<tr class="a">
+<td>Memory</td>
+<td>No minimum requirement.</td></tr>
+<tr class="b">
+<td>Disk Space</td>
+<td>No minimum requirement.</td></tr></table></div>
 <div class="section">
-<h3><a name="Usage"></a>Usage</h3>
-<p>General instructions on how to use the CORBA IDL Compiler Maven Plugin can be found on the <a href="./usage.html">usage page</a>.</p>
-<p>In case you still have questions regarding the plugin's usage, please feel free to contact the <a href="./mail-lists.html">user mailing list</a>. The posts to the mailing list are archived and could already contain the answer to your question as part of an older thread. Hence, it is also worth browsing/searching the <a href="./mail-lists.html">mail archive</a>.</p>
-<p>If you feel like the plugin is missing a feature or has a defect, you can fill a feature request or bug report in our <a href="./issue-tracking.html">issue tracker</a>. When creating a new issue, please provide a comprehensive description of your concern. Especially for fixing bugs it is crucial that the developers can reproduce your problem. For this reason, entire debug logs, POMs or most preferably little demo projects attached to the issue are very much appreciated. Of course, patches are most welcome too. Contributors can check out the project from our <a href="./source-repository.html">source repository</a> and will find supplementary information in the <a class="externalLink" href="http://maven.apache.org/guides/development/guide-helping.html">guide to helping with Maven</a>.</p></div></div>
+<h3><a name="Usage"></a>Usage</h3><a name="Usage"></a>
+<p>You should specify the version in your project's plugin configuration:</p>
+<div class="source"><pre class="prettyprint">&lt;project&gt;
+  ...
+  &lt;build&gt;
+    &lt;!-- To define the plugin version in your parent POM --&gt;
+    &lt;pluginManagement&gt;
+      &lt;plugins&gt;
+        &lt;plugin&gt;
+          &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+          &lt;artifactId&gt;idlj-maven-plugin&lt;/artifactId&gt;
+          &lt;version&gt;1.2.2&lt;/version&gt;
+        &lt;/plugin&gt;
+        ...
+      &lt;/plugins&gt;
+    &lt;/pluginManagement&gt;
+    &lt;!-- To use the plugin goals in your POM or parent POM --&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+        &lt;artifactId&gt;idlj-maven-plugin&lt;/artifactId&gt;
+        &lt;version&gt;1.2.2&lt;/version&gt;
+      &lt;/plugin&gt;
+      ...
+    &lt;/plugins&gt;
+  &lt;/build&gt;
+  ...
+&lt;/project&gt;
+</pre></div>
+<p>For more information, see <a class="externalLink" href="http://maven.apache.org/guides/mini/guide-configuring-plugins.html">&quot;Guide to Configuring Plug-ins&quot;</a></p></div></div>
                   </div>
             </div>
           </div>
